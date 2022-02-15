@@ -15,12 +15,20 @@ class HomeScreen extends StatelessWidget {
    return Scaffold(
      appBar: AppBar(),
       body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
-          ElevatedButton(
-            onPressed: () {
-              Navigator.pushNamed(context, '/AlphanYemek');
-            },
-              child: Text('Alphan\'ın Sayfası'),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.pushNamed(context, '/AlphanYemek');
+                },
+                  child: Text('Alphan\'ın Sayfası'),
+              ),
+            ],
           ),
           Text('asdasd'),
         ],
