@@ -12,6 +12,21 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text("UMUTCAN");
+   return Scaffold(
+     appBar: AppBar(),
+      body: Column(
+        children: <Widget>[
+          ElevatedButton(
+            onPressed: () {
+              Navigator.pushNamed(context, '/AlphanYemek');
+            },
+              child: Text('Alphan\'ın Sayfası'),
+          ),
+          Text('asdasd'),
+        ],
+
+      ),
+
+    );
   }
 }

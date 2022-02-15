@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class AlphanYemek extends StatelessWidget {
-  static const String routeName= '/';
+  static const String routeName= '/AlphanYemek';
 
   static Route route() {
     return MaterialPageRoute(
@@ -12,6 +12,17 @@ class AlphanYemek extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text("UMUTCAN");
+    return Scaffold(
+      appBar: AppBar(),
+      body: Column(
+        children: <Widget>[
+          Text('deneme'),
+          Text('asdasd'),
+        ],
+
+      ),
+
+    );
   }
 }
+
