@@ -13,13 +13,44 @@ class AlphanYemek extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      extendBodyBehindAppBar: true,
+      backgroundColor: Colors.white,
+      appBar: AppBar(
+        backgroundColor: Colors.transparent,
+        shadowColor: Colors.transparent,
+        actions: [
+          IconButton(
+              onPressed: () {
+
+              },
+              icon: Icon(Icons.share),
+          ),
+        ],
+      ),
       body: Column(
         children: <Widget>[
-          Text('deneme'),
-          Text('asdasd'),
-        ],
+          Stack(
+              children: [Image.asset('lib/assets/images/yemek.jpg'),
+              const Positioned.fill(
+                  child: Padding(
 
+                    padding: EdgeInsets.only(bottom: 8),
+                    child: Align(
+                      child: Text(
+                          'Chef\'in Tabağı',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 32,
+                        ),
+                      ),
+                      alignment: Alignment.bottomCenter,
+                    ),
+                  ),
+
+              ),
+            ],
+          ),
+        ],
       ),
 
     );
