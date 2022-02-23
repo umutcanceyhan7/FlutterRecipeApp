@@ -42,6 +42,18 @@ class HomeScreen extends StatelessWidget {
               ),
             ],
           ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: <Widget>[
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.pushNamed(context, '/AtalayYemek');
+                },
+                child: Text('Atalay\'ın Sayfası'),
+              ),
+            ],
+          ),
           Text('Bu bir yemek tarifi uygulamasıdır!'),
         ],
 
