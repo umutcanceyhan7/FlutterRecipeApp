@@ -29,9 +29,27 @@ class AlphanYemek extends StatelessWidget {
       ),
       body: Column(
         children: <Widget>[
-          Container(
-              child: Image.asset('lib/assets/images/yemek.jpg')),
-          Text('asdasd'),
+          Stack(
+              children: [Image.asset('lib/assets/images/yemek.jpg'),
+              const Positioned.fill(
+                  child: Padding(
+
+                    padding: EdgeInsets.only(bottom: 8),
+                    child: Align(
+                      child: Text(
+                          'Chef\'in Tabağı',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 32,
+                        ),
+                      ),
+                      alignment: Alignment.bottomCenter,
+                    ),
+                  ),
+
+              ),
+            ],
+          ),
         ],
       ),
 
