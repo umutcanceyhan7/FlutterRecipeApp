@@ -13,13 +13,26 @@ class AlphanYemek extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      extendBodyBehindAppBar: true,
+      backgroundColor: Colors.white,
+      appBar: AppBar(
+        backgroundColor: Colors.transparent,
+        shadowColor: Colors.transparent,
+        actions: [
+          IconButton(
+              onPressed: () {
+
+              },
+              icon: Icon(Icons.share),
+          ),
+        ],
+      ),
       body: Column(
         children: <Widget>[
-          Text('deneme'),
+          Container(
+              child: Image.asset('lib/assets/images/yemek.jpg')),
           Text('asdasd'),
         ],
-
       ),
 
     );
