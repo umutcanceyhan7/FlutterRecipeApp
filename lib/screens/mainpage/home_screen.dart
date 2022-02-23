@@ -30,7 +30,19 @@ class HomeScreen extends StatelessWidget {
               ),
             ],
           ),
-          Text('asdasd'),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: <Widget>[
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.pushNamed(context, '/UmutcanYemek');
+                },
+                child: Text('Umutcan\'ın Sayfası'),
+              ),
+            ],
+          ),
+          Text('Bu bir yemek tarifi uygulamasıdır!'),
         ],
 
       ),

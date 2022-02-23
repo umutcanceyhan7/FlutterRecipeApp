@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_recipe_app/screens/alphan_yemek/alphan_yemek.dart';
 import 'package:flutter_recipe_app/screens/mainpage/home_screen.dart';
+import 'package:flutter_recipe_app/screens/umutcan_yemek/umutcan_yemek.dart';
 
 class AppRouter {
   static Route onGenerateRoute(RouteSettings settings) {
@@ -14,6 +15,8 @@ class AppRouter {
         return HomeScreen.route();
       case AlphanYemek.routeName:
         return AlphanYemek.route();
+      case UmutcanYemek.routeName:
+        return UmutcanYemek.route();
       default:
         return _errorRoute();
     }
